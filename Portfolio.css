@@ -1,0 +1,179 @@
+
+@media screen and (max-width:480px){
+
+
+* {
+  padding:0;
+  margin:0;
+}
+/****/
+body {
+  padding:0;
+  margin:0;
+  width: 100vw;
+  display: inline-block;
+  background-color: white;
+}
+
+.wrapper {
+  width: 100%;
+}
+/****/
+#header {
+  z-index: 9999;
+  position: fixed;
+  top:0;
+  left:0;
+  height: 60px;
+  width: 100vw;
+}
+
+.header-logo {
+  z-index: 9999;
+  height: 70px;
+  width: 100%;
+  display:inline-block;
+  text-align: left;
+}
+/**メニューアイコン**/
+a {
+  text-decoration: none;
+}
+
+.menu-icon {
+  z-index: 9999;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.menu-icon div {
+  height: 2px;
+  width: 30px;
+  background: black;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,0);
+  transition: 0.5s;
+}
+.menu-icon div:nth-of-type(1){
+  transform: translate(-50%,-10px);
+}
+
+.menu-icon div:nth-of-type(3){
+  transform: translate(-50%,10px);
+}
+
+.menu-icon:active div:nth-of-type(1){
+  transform: rotate(135deg) translate(-50%,0px);
+  transform-origin: 0% 50%;
+}
+
+.menu-icon:active div:nth-of-type(2){
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.menu-icon:active div:nth-of-type(3){
+  transform: rotate(-135deg) translate(-50%,0px);
+  transform-origin: 0% 50%;
+}
+
+/**ナビゲーション**/
+nav {
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.nav-list {
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  text-align: center;
+  background-color: white;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+
+.nav-item a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  font-size: 20px;
+  background-color: white;
+ 
+}
+/**メールアイコン**/
+
+/**トップ**/
+#top {
+  position: relative;
+  top:0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/**トップスライダー**/
+
+#ts-color{
+  position: absolute;
+  top: 40%;
+  width: 200vw;
+  z-index: 9999;
+  overflow: hidden;
+  margin-left: -100vw;
+  filter: drop-shadow(-10px 10px 10px rgb(0, 0, 0,0.5));
+}
+
+#ts-monotone{
+  position: absolute;
+  top: 30%;
+  width: 200vw;
+  margin-left: -100vw;
+  z-index: 999;
+  filter: drop-shadow(-15px 15px 15px rgb(0, 0, 0,0.7));
+  filter: grayscale(100%);
+}
+
+/**トップテキスト**/
+.top-text {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  right: 0;
+}
+/**デザイン**/
+#design-wrapper {
+  width: 100vw;
+
+}
+.design-title {
+  width: 100vw;
+  text-align: center;
+}
+/****/
+
+}
